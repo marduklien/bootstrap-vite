@@ -1,5 +1,5 @@
-import './main.js'
-import '../scss/main.scss'
+// import './main.js'
+// import '../scss/main.scss'
 
 // 首頁專屬邏輯
 console.log('Index page loaded')

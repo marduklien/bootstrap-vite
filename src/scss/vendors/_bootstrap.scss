@@ -1,9 +1,9 @@
 // vendors/_bootstrap.scss
 
 // 1. 先引入你的自訂變數（覆蓋 Bootstrap 預設值）
-@use "../abstracts/variables" as *;
-@use "../abstracts/variables-dark" as *;
+@import "../abstracts/variables";
+@import "../abstracts/variables-dark";
 
 // 2. 引入 Bootstrap 全部（練習用）
 // 未來可改為逐一引入以縮小體積
-@import "~bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";

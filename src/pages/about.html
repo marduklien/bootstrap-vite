@@ -1,3 +1,8 @@
+<%
+  var title = '關於我們';
+  var activePage = 'about';
+  var pageScript = '/src/js/pages/about.js';
+%>
 <%- include(partialsDir + '/header.ejs', { title, activePage }) %>
 
 <main class="container py-5">
@@ -6,8 +11,10 @@
     <p class="lead text-body-secondary">Bootstrap 5.3 客製化練習專案</p>
     <br><br>
     <a class="btn btn-primary btn-lg" href="product.html" role="button">查看產品</a>
-  </section>
+    <br><br>
+    <div id="liveAlertPlaceholder"></div>
+   <button type="button" class="btn btn-primary abc" id="liveAlertBtn">Show live alert</button>
   </section>
 </main>
 
-<%- include(partialsDir + '/footer.ejs') %>
+<%- include(partialsDir + '/footer.ejs', { pageScript: '/src/js/about.js' }) %>

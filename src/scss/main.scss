@@ -1,24 +1,25 @@
 // main.scss — 引入順序很重要！
 
 // 1. 第三方（Bootstrap 含客製變數）
-@use "vendors/bootstrap";
+@import "vendors/bootstrap";
 
 // 2. Base 基礎樣式
-@use "base/reset";
-@use "base/typography";
+@import "base/reset";
+@import "base/typography";
 
 // 3. Layout 版型
-@use "layout/header";
-@use "layout/footer";
-@use "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/grid";
 
 // 4. Components 元件
-@use "components/buttons";
-@use "components/cards";
-@use "components/navbar";
+@import "components/buttons";
+@import "components/cards";
+@import "components/navbar";
+
 
 // 5. Pages 頁面專用（按需引入）
-@use "pages/home";
-@use "pages/about";
-@use "pages/product";
-@use "pages/contact";
+@import "pages/home";
+@import "pages/about";
+@import "pages/product";
+@import "pages/contact";
