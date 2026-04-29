@@ -8,6 +8,7 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url))
 const partialsDir = path.resolve(__dirname, 'src/partials').replace(/\\/g, '/')
 
 export default defineConfig({
+  base:'bootstrap-vite',
   server: {
     port: 5173,
     open: '/index.html',
