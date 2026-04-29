@@ -1,0 +1,23 @@
+// abstracts/_variables.scss
+// 在 Bootstrap @import 之前宣告，即可覆蓋 Bootstrap 預設值
+
+// ── 色彩系統 ──────────────────────────────
+$primary:   #01696f;   // 覆蓋 Bootstrap 藍色
+$secondary: #6c757d;
+$success:   #437a22;
+$danger:    #a12c7b;
+
+// ── 字型 ──────────────────────────────────
+$font-family-sans-serif: 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+$font-size-base:          1rem;
+$line-height-base:        1.6;
+
+// ── 圓角 ──────────────────────────────────
+$border-radius:    0.5rem;
+$border-radius-lg: 0.75rem;
+
+// ── 間距 ──────────────────────────────────
+$spacer: 1rem;
+
+// ── Navbar ────────────────────────────────
+$navbar-padding-y: 1rem;

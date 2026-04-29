@@ -1,0 +1,12 @@
+// abstracts/_variables-dark.scss
+// Bootstrap 5.3 原生支援 data-bs-theme="dark"
+
+// 深色模式色彩調整（Bootstrap 5.3 使用 CSS 變數機制）
+[data-bs-theme="dark"] {
+  --bs-primary: #4f98a3;
+  --bs-primary-rgb: 79, 152, 163;
+  --bs-body-bg: #171614;
+  --bs-body-color: #cdccca;
+  --bs-secondary-bg: #1c1b19;
+  --bs-border-color: #393836;
+}

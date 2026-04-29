@@ -1,0 +1,18 @@
+<%- include(partialsDir + '/head.ejs', { title }) %>
+
+<body data-bs-theme="light">
+
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/index.html">MyBrand</a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false"
+        aria-label="切換導覽列">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <%- include(partialsDir + '/nav.ejs', { activePage }) %>
+    </div>
+  </nav>
+</header>
