@@ -1,13 +1,16 @@
-<!-- footer.ejs -->
-<footer class="site-footer py-4 mt-auto bg-body-secondary">
+<footer class="py-4 mt-auto bg-body-tertiary">
   <div class="container text-center">
-    <p class="mb-0 text-body-secondary">
-      &copy; <%= new Date().getFullYear() %> MyBrand. All rights reserved.
-    </p>
+    <p class="text-muted mb-0">&copy; 2024 MyProject</p>
   </div>
 </footer>
 
-<!-- Bootstrap Bundle JS（含 Popper） -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- 通用 JS：每頁都載入 -->
+<script type="module" src="/src/js/index.js"></script>
+
+<!-- 頁面專屬 JS：由各頁面傳入 pageScript 變數 -->
+<% if (typeof pageScript !== 'undefined' && pageScript) { %>
+  <script type="module" src="<%= pageScript %>"></script>
+<% } %>
+
 </body>
 </html>
